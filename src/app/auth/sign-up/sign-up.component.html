@@ -1,0 +1,30 @@
+<app-header></app-header>
+<br/>
+<mat-card>
+    <form class="example-form" #registerForm="ngForm">
+
+    <mat-card-content>
+        <span >Register</span>
+<div class="example-container" >
+    <mat-form-field>
+      <input matInput [(ngModel)] = "formData.Name" name = "Name" placeholder="Name">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput [(ngModel)] = "formData.email" name = "email" placeholder="email">
+    </mat-form-field>
+   
+    <mat-form-field>
+      <input matInput [(ngModel)] = "formData.mobile" name = "mobile" placeholder="mobile">
+    </mat-form-field>
+
+    
+  </div>
+  <br/>
+</mat-card-content>
+<mat-card-actions>
+  <button [disabled]="!registerForm.form.valid" (click) = "register()" type = "submit" mat-raised-button color="primary">Register</button>
+</mat-card-actions>
+</form>
+
+</mat-card>

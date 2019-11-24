@@ -6,7 +6,7 @@
     "harisukha": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:component": {
+        "@schematics/angular:c̀omponent": {
           "style": "sass"
         }
       },
@@ -28,9 +28,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.sass","node_modules/bootstrap/dist/css/bootstrap.min.css"
+
             ],
-            "scripts": []
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.min.js","node_modules/jquery/dist/jquery.min.js"
+            
+            ]
           },
           "configurations": {
             "production": {
@@ -93,6 +97,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.sass"
             ],
             "scripts": []
@@ -124,6 +129,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "harisukha"
 }
