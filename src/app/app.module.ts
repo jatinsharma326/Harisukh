@@ -13,6 +13,7 @@ import { LoginComponent } from './auth/login/login.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { SharedService } from './auth/services/shared.service';
 import { HttpClientModule } from '@angular/common/http';
+import { TalkToAstroComponent } from './talk-to-astro/talk-to-astro.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import { HttpClientModule } from '@angular/common/http';
     FrontpageComponent,
     SecondpageComponent,
     SignUpComponent,
-    LoginComponent
+    LoginComponent,
+    
+    TalkToAstroComponent
   ],
   imports: [
     BrowserModule,
